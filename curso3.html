@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Curso 3</title>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="shortcut icon" href="img/Logo personal.jpg" />
+	<!--Favicon -->
+
+</head>
+
+<body>
+	<!--Menu inicio-->
+	<div class="prox">
+		<main class="map">
+			<!--<img src="img/prox.jpg">-->
+			<h1>
+				<p>Proximamente: Cursos de programación</p>
+			</h1>
+		</main>
+	</div>
+
+	<header id="header">
+		<nav class="menu">
+			<div class="logo">
+				<a href="index.html"><img src="img/Logo personal.jpg" alt="">Inicio</a>
+				<a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="enlaces" id="enlaces">
+				<a href="introdb.html"><i class="fa fa-home" aria-hidden="true"></i> Introducción</a>
+				<a href="curso1.html"><i class="fa fa-cube" aria-hidden="true"></i>Curso 1</a>
+				<a href="curso2.html"><i class="fa fa-cube" aria-hidden="true"></i> Curso 2</a>
+				<a href="curso3.html"><i class="fa fa-cube" aria-hidden="true"></i> Curso 3</a>
+				<a href="registro.php"><i class="fa fa-cube" aria-hidden="true"></i>Registrate</a>
+			</div>
+		</nav>
+
+	</header>
+	<!--Menu fin-->
+
+	<main>
+		<article>
+			<h1>Curso de desarrollo de página web con HTML, CSS Y PHP.</h1>
+			<hr>
+			<h2>HTML</h2>
+			<p>En esta primera parte te ayudaremos a iniciar con tu primera página web y que cada vez tendrá una mejor
+				vista para el ususario.</p>
+			<div class="curso3i">
+				<p>Para empezar a trabajar con esto primero añadiremos todos los archivos y despues iremos trabajando con cada uno de ellos, para eso dentro de una carpeta agregaremos diferentes archivos con los siguientes nombre:</p>
+				<p>• iniciop.html</p>
+				<p>• contacto.php</p>
+				<p>• recibir.php</p>
+				<p>Ahora añadiremos dos carpetas dentro de la misma ruta con los siguientes nombres:</p>
+				<p>• css</p>
+				<p>• img</p>
+				<p>Con forme se vaya trabajando con los archivos se ira explicando su funcionamiento, por lo mientras nos debe de quedar algo así:</p>
+
+				<CENTER>
+					<img src="img/curso3/carpeta.png" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3d">
+				<p>Empezaremos abriendo el archivo "iniciop.html" pero lo abriremos desde nuestro editor de texto favorito o dando click derecho y seleccionando bloc de notas si es que no cuentas con un editor de texto.</p>
+				<p>Al abrirlo nos aparecerá un archivo en blanco pero es ahí cuando empezaremos a poner la estructura de nuestra página web la cual es la siguiente: </p>
+				<CENTER>
+					<img src="img/curso3/sintaxis.png" width="100%">
+				</CENTER>
+				<p> Para explicar rápidamente esta parte vemos que las etiquetas "html" son las que contienen todo el código, luego las etiquetas "head" se encargarán de almacenar el titulo de la página y de extensiones que utilizaremos y dentro de las etiquetas "body" vamos a escribir todo nuestro código para la página.</p>
+				<p>Cabe resaltar que como vemos cada etiqueta que se abre se tiene que cerrar y para esto vemos que las etiquetas que abren contienen "<>" y para cerrarlas se añade una / despues de "<" y antes de escribir el nombre de la etiqueta.</p>
+			</div>
+			<div class="curso3i">
+				<p>Ahora pondremos un titulo a nuestra página, que es el que se va amostrar en la pestaña de la página, para esto dentro de la etiquetas "head"</p>
+				<p>Además de eso añadiremos de una vez dos "links" los cuales nos serviran para mandar a llamar todo lo que se encuentre en ese archivo, en este caso vamos a mandar a llamar a dos archivos que creamos en un inicio en la carpeta "css" y despues trabajaremos con ellas, por lo cual nos quedaría de la siguiente forma:</p>
+				<textarea readonly  class="pequeño" id="html" name="coment">
+<head>
+<title>Nombre a anuestra pestaña</title>
+<link rel="stylesheet" href="css/estilosp.css">
+<link rel="stylesheet" href="css/slider.css">
+</head>
+				</textarea>
+				<p>• Si queremos visualizar como va quedando nuestra página basta con abrir el archivo "iniciop.html" con algún navegador de internet y esto nos madará la visualización de lo que estamos haciendo y hasta ahorita nos debe de aparecer una ventana en blanco, pero si vemos la parte de la pestaña veremos que contiene el nombre que nosotros le pusimos dentro de las etiquetas de titulo.</p>
+			</div>
+			<div class="curso3d">
+				<p>Ahora pasaremos a hacer un menú sencillo, el cuál contara con los botones de "Inicio" y de "Registrarse", para hacer esto, dentro del body de nuestra página vamos a escribir lo siguiente:</p>
+				<textarea readonly class="mediano" id="html" name="coment">
+<body>
+  <CENTER>
+    <table class="tabla">
+      <tr>
+        <td><a href="iniciop.html">Inicio</a></td>
+        <td><a href="contacto.php">Contacto</a></td>
+      </tr>
+    </table>
+  </CENTER>
+</body>					
+				</textarea>
+				<p>• Como podemos ver al poner las etiquetas "table" estamos diciendo que vamos a crear una tabla, donde "tr" definirá a cada fila dentro de la tabla y "td" definirá a cada velda en la tabla, de esta manera generamos una pequeña tabla que nos servirá para poder redireccionarnos por nuestra pequeña página.</p>
+				<p>• Las etiquetas "CENTER" que se encuentran encerrando a la tabla nos sirven para poder centrar la tabla generada a la pantalla que es donde se visualizará.</p>
+				<p>• Al generar cada celda se puede ver que vamos a generar un link a otra página, la cuál se encuentra entre comillas, y es a donde se irá despues de darle click a la oración que deseemos escribir en seguida.</p>
+				<p>• Y su resultado debe de ser parecido a este...</p>
+				
+				<CENTER>
+					<img src="img/curso3/tabla.png" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3i">
+				<p>Ahora comenzaremos a hacer una caja donde vamos a poner nuestra información que queramos agregar, para eso vamos a empezar a usar las etiquetas "DIVS" las cuales nos ayudaran para generar esto.</p>
+				<p>Pero vamos a trabajar de una forma diferente, vamos a utilizar los "DIVS", pero para ir dando una mejor estructura y tener una comodidad con el código escribiremos las siguientes lineas de código dentro de nuestro "body".</p>
+				<textarea readonly class="mediano" id="html" name="coment">
+<main>
+  <article>
+    <h1>SOFT4ALL</h1>
+    <hr>
+       
+  </article>	
+</main>
+				</textarea>
+				<p>• Como vemos en primer lugar las etiquetas "main" y "article" encierran todo el código, pero esto no es forzoso ponerlo, simplemente es por estética y para poder manejar de mejor forma todo el codigo que vallamos escribiendo</p>
+				<p>• Nos sigue un "h1" el cuál nos servirá para introducir unn texto donde el "1" corresponde al tamaño de letra y el "hr" que econtramos abajo nos sirve para poder generar una línea que separará el titulo de todo lo demás, es simplemente cuestión de gustos ponerlo.</p>
+			</div>
+			<div class="curso3d">
+				<p>Ahora como parte de este curso enseñaremos a hacer un "slider" dentro de nuestra página, el cuál se puede dar a entender como la nueva tendencia en diseño web, una forma espectacular de transición y animación en las imágenes de su sitio web
+				<p>Para poder realizar esto, será necesario empezar a aprender un poco de "CSS", lo cuál será necesario para darle ESTILO a nuestro slider que vamos a hacer, CSS se define como una hoja de estilos sobre las cuales vamos a poder manejar o darle color y forma a nuestro código ya escrito en html.</p>
+				<p>• Para iniciar empezaremos por guardar 4 imagenes dentro de la carpeta "img" que creamos a inicios de este curso.</p>
+				<p>• Despues de hacer eso, dentro de la carpeta "css" vamos a generar un nuevo archivo con el nombre "estilosp.css" y otro con el nombre "slider.css"</p>
+				<p>• Estos archivos los necesitaremos para empezar a darle forma a nuestro código, en primera haremos uso del archivo "slider.css", pero antes, dentro de nuestro "article" generado en html, agregaremos el siguiente código:</p>
+				<textarea readonly class="mediano" id="html" name="coment">
+<center>
+  <div class="slider">
+    <ul> 
+      <li><img src="img/welcomehome.jpg" ></li>
+      <li><img src="img/html.png" ></li>
+      <li><img src="img/css.jpg" ></li>
+      <li><img src="img/html.png" ></li>
+    </ul>
+  </div>
+</center>
+				</textarea>
+				<p>Podemos ver que el códgio anterior contiene de igual manera la etiqueta "CENTER" que encierra a esta parte del código, lo cuál nos ayudará para centrarlo a nuestra pantalla.</p>
+				<p>• Después generamos  un DIV con la clase "slider" la cuál nos servirá para poder manejarla desde nuestra hoja de estilos "css"</p>
+
+				<p>•La etiqueta "ul" la utilizamos para hacer una lista no ordenada, y dentro de esta generamos 4 "li", uno para cada imagen.</p>
+				<p>•Por ultimo, cada li, dentro tiene una etiqueta "img" la cuál nos ayuda para poner una imagen desde una direccion URL, y podemos ver que la direccion se encuentra despues del "src=", y la dirección coincide con la carpeta donde metimos las 4 imagenes, y nombrando a cada una por su nombre y su extension corrspondiente.</p>
+				<CENTER>
+					<img src="" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3i">
+				<p>Hasta el momento si vemos como nos va quedando la  página no se verá tan bien las imagenes, para eso será necesario manejarlo ahora desde nuestra hoja de estilos que creamos.</p>
+			</div>
+
+		</article>
+	</main>
+	<main>
+		<article>
+			<h2>CSS</h2>
+			<p>Ahora empezaremos a trabajar desde la parte de estilos a nuestro gusto para nuestra página, primeramente abriremos el archivo "slider.css" que creamos pasos atrás.</p>
+			
+			<div class="curso3i">
+				<p>En esta hoja de estilos llevaremos a cabo los arreglos necesarios para que nuestro "slider" funcione correctamete, como no es un documento HTML no debemos de generar la sintaxis por defecto para una página web.</p>
+				<p>Empezaremos por añadir estas líneas de código:</p>
+				<textarea readonly class="pequeño" id="html" name="coment">
+.slider{
+	width: 95%;
+	margin: center;
+	overflow: hidden;
+}</textarea>
+				<p>Donde al poner ".slider" es estamos llamando a nuestro código html a la parte donde encuentre la clase con el nombre slider, a partir de ahí le asignará lass siguientes características:</p>
+				<p>• Que tenga de ancho un 95% al total de la pantalla.</p>
+				<p>• Que el margen corrspondiente se encuentre centrado</p>
+				<p>• Por ultimo controlar su comportamiento de los elemetos que no caben en el contenedor de forma oculta</p>
+				<CENTER>
+					<img src="" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3d">
+				<p>Abajo de este código que escribimos ahora nos enfocaremos en los ul que contiene nuestra clase de la siguiente manera:</p>
+				<textarea readonly class="pequeño" id="html" name="coment">
+.slider ul{
+	display: flex;
+	width: 400%;
+	animation: cambio 35s infinite alternate;
+}
+				</textarea>
+				<p>De igual manera en esta parte va a buscar la clase slider y que dentro de esta contenga una etiqueta ul, donde aplicará las siguientes características:</p>
+				<p>• Que el movimiento de la pantalla sea de forma flexible</p>
+				<p>• Que tenga de ancho 400%, ya que son 4 imágenes y así cada una ocupara 100% del total.</p>
+				<p>• Y por ultimo se añade una animación que será un cambio con duración de 35 segundos en total, que siempre se esté llevando a cabo y que una vez llegue al final e la 4ta imagen, vaya de regreso y no vuelva a empezar desde el inicio.</p>
+			</div>
+			<div class="curso3i">
+				<p>Ahora para trabajar en los "li" que estén dentro de nuestra clase slider en nuestro código html añadiremos las siguientes líneas:</p>
+				<textarea readonly class="pequeño" id="html" name="coment">
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+				</textarea>
+				<p>• Como vemos le está otorgando de ancho un 100% a la pantalla, por lo cuál el otro 300% del total que le dimos se ocultará.</p>
+				<p>• Y le negamos que no se pongan en lista, de esta manera conseguiremos que se muestren uno seguido del otro.</p>
+				
+			</div>
+			<div class="curso3d">
+				<p>Ahora simplemente se le va a dar estilos a las imagenes que esten dentro de una clase slider, para esto utilizamos el siguiente código:</p>
+					<textarea readonly class="pequeño" id="html" name="coment">
+.slider img{
+	width: 70%;
+}
+						</textarea>
+				<p>• Donde simplemente le damos el valor de ancho en un 70% a todas las imagenes que tenemos en nuestro html.</p>
+				<CENTER>
+					<img src="" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3i">
+				<p>Ahora finalmente haremos que suceda la magia y que nuestro slider haga efecto por si solo, para esto añadimos las siguientes líneas de códgio:</p>
+				<textarea readonly class="mediano" id="html" name="coment">
+@keyframes cambio {
+	0% { margin-left: 0; }
+	20% { margin-left: 0; }
+
+	30% { margin-left: -100%; }
+	45% { margin-left: -100%; }
+
+	55% { margin-left: -200%; }
+	70% { margin-left: -200%; }
+
+	80% { margin-left: -300%; }
+	100% { margin-left: -300%; }
+}
+					</textarea>
+				<p>• Como vemos el "@keyframes" nos ayudará para podr hacer los movimientos de imagenes, donde el nombre que le daremos es "cambio".</p>
+				<p>• Dentro de esto, vemos que el 100% que es el total lo dividimos en 4 partes de 2 cada una, donde cada 2 serán asignadas a cada imagen que añadimos.</p>
+				<p>• Vemos que en todas le modificamos el margen izquierdo, donde para la primera imagen queremos que no se mueva, despues queremos moverla a la izquierda un 100%, lo que mostrará la segunda imagen, lo mismo se hace con la tercera imagen pero ahora moviendo el margen izquierdo un 200% para que sea visible y por último hacemos lo mismo con la 4ta imagen aumqntando su margen izquierdo un 300% para poder visualzarla.</p>
+				<p>Y finalmente el resultado de sto al momento se puede ver a nuestro slider cambiando de imagen cada cierto tiempo y regresando de igual forma como la siguiente:</p>
+				<CENTER>
+					<img src="img/curso3/slider.png" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3d">
+				<p>En este momento ya tenemos una página html sencilla creada, pero ahora a partir de la siguiente parte le implementaremos una base de datos para que nos guarde unos cuantos datos y poder almacenaros.</p>
+				
+			</div>
+			<div class="curso3i">
+				<p> Ahora para hacer una página con una vista de ventas, trabajaremos con una tabla para facilitarlo, como sabemos, una sintaxis básica de una tabla en html es:</p>
+			<textarea readonly class="pequeño" id="html" name="coment">
+<table>
+	<tr>
+		<td></td>
+	</tr>
+</table>				
+			</textarea>
+			</div>
+			<div class="curso3d">
+				<p> Para este paso, elaboramos una tabla donde adentro del "td" llamaremos una imágen, y abajo en otra caja la utilizaremos para poner el titulo de la imagen y el precio, quedandonos de la siguiente forma: </p>
+				<textarea readonly class="mediano">
+<table>
+	<tr>
+		<td><img src="img/Nueva carpeta/esp.jpg" width="40%"></td>	
+	</tr>
+	<tr>
+		<td> ..Titulo..</td><td><h4>..precio..</h4></td>	
+	</tr>
+</table>		
+				</textarea>
+				<p> De esta forma conseguiremos que abajo de la imagen nos quede el titulo y el precio resalte un poco para hacerse notar</p>
+			</div>
+			<div class="curso3i">
+				<p> De esta forma lo haremos con los elementos que queramos que estén visibles, de esta manera con unos ejemplos más nos queda de la siguiente manera desde la vista del usuario.</p>
+				<CENTER>
+					<img src="Curso3/img/Nueva carpeta/partee.png" width="100%">
+				</CENTER>
+			<p>• Como vemos el "h4" nos sirve para darle más  grosor a las letras del precio y de igual manera nos queda en la  misma columna.</p>
+			</div>
+			
+		</article>
+	</main>
+
+	<main>
+		<article>
+			<h2>PHP</h2>
+			<div class="curso3i">
+				<p>A partir de esta parte para poder trabajar tendremosque decargar XAMPP en nuestro equipo de trabajo para poder realizar una base de datos y manejarla a travez de un host local.</p>
+				<p>Una vez descargado, lo que tenemos que hacer es abrirlo y activar los siguientes modulos:</p>
+				<CENTER>
+						<img src="img/curso3/xampp.png" width="100%">
+					</CENTER>
+			</div>
+			<div class="curso3d">
+				<p>Para administrar nuestro sistema gestor de base de datos el cuál será "MySQL" daremos click en el botón de administrar, esto nos abrirá una ventana en nuestro navegador redireccionandonos a la pantalla principal de MySQL y será ahí donde empezaremos a crear nuestra base de datos dando click del lado izquierdo donde nos dice Nueva.</p>
+				
+				<CENTER>
+					<img src="img/curso3/mysql.png" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3i">
+				<p>Ahora empezaremos por darle el nombre a nuestra base de datos, y enseguida seleccionaremos el cotejamiento de "utf8_spanish_ci" y ahora daremos en crear.</p>
+				<CENTER>
+						<img src="img/curso3/1b.png" width="100%">
+				</CENTER>
+				<p>Esto nos mandará a  otra ventana donde le daremos el nombre a nuestra primera tabla la cuál se llamara "usuarios" y en número de columnas seleccionaremos 6, nuevamente damos en continuar.</p>
+			</div>
+			<div class="curso3d">
+				<p>A partir de aqui vamos a empezar a crear la estructura de nuestra tabla dentro de nuestra base de datos, para esto nuestra tabla va a contener los siguientes campos:</p>
+				<p>• Id</p>
+				<p>• Nombre</p>
+				<p>• Apellido</p>
+				<p>• Correo electrónico</p>
+				<p>• Contraseña</p>
+				<p>• Sexo</p>
+			
+			</div>
+			<div class="curso3i">
+				<p>Para agregarlos los vamos a ir introduciendo en los campos de nombre, uno por uno, y a el primer campo que es "id" le activaremos la casilla de "AutoIncrement" para que sea un número de registro que se vaya incrementando automaticamente y no se repita.</p>
+				<p>En tipo de dato o segunda columna seleccionaremos "INT" para el id, para el resto seleccionaremos "VARCHAR" ya que utilizaremos letras y números en conjunto.</p>
+				<CENTER>
+					<img src="img/curso3/tablaconf.png" width="100%">
+				</CENTER>
+				<p>En longitud de valores daremos 10 para id, 30 para el nombre, apellidos, correo y contraseña. Para el sexo solo daremos 1.</p>
+				<p>Por ultimo daremos en guardar para poder terminar y nos mostrara como quedó generada nuestra tabla de datos</p>
+			</div>
+			<div class="curso3d">
+				<p>Ahora para poder trabajar con nuestro hosting de manera local tenemos que guardar la carpeta de nuestra página html dentro de la siguiente direccion:</p>
+				<p>• Dsico local(C:)/xampp/htdocs</p>
+				<p>• Y posteriormente para poder ver nuestra página ahora la uscaremos en nuestro navegador con el nombre de: "localhost/nombrecarpeta/nombredeldocumento.html"</p>
+	
+			</div>
+			<div class="curso3i">
+				<p>Ahora abriremos el archivo con nombre "contacto.php", el cuál ya habíamos creado anteriormente, dentro de este archivo le daremos nuevamente la sintaxis para una página como lo habíamos hecho en un principio.</p>
+				<p>• Ahora toca el paso de crear un "formulario" para poder almacenar la información, para eso vamos a hacer el uso de una tabla para que todo quede más estético. </p>
+				<p>• Dentro del cuerpo de nuestro archivo "body" introduciremos el siguiente código:</p>
+				<textarea readonly class="grande" id="html" name="coment">
+<form class="formulario" action="recibir.php" method="POST">
+<table>
+<tr>
+<td colspan="2"><h2>Registro</h2></td>
+</tr>
+<tr>
+<td align="right"><label for="name">Nombre:</label></td>
+<td><input id="name" type="text" name="nombre" required/></td>
+</tr>
+<tr>
+<td align="right"><label for="ap">Apellido: </label></td>
+<td><input type="text" id="ap" name="apellido" required/></td>
+</tr>
+<tr>
+<td align="right"><label for="email">Correo: </label></td>
+<td><input type="text" id="email" name="email" required/> <br/></td>
+</tr>
+<tr>
+<td align="right"><label for="password">Contraseña: </label></td>
+<td><input type="password" id="password" name="pass" required/> <br></td>
+</tr>
+<tr>
+<td align="right"><label for="sexo">Sexo: </label></td>
+<td>
+<input type="radio" id="sexo" name="sexo" value="M" required/>Masculino
+<input type="radio" id="sexo" name="sexo" value="F" required/>Femenino
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input class="env "type="submit" name="enviar" value="Enviar"></td>
+</tr>
+</table>
+</form>
+				</textarea>
+				<p>• En este código podemos ver que las etiquetas "form" encierran a todo los datos que vamos a pedir, los cuales están estructurados en sobre una tabla para una mejor presentación.</p>
+				<p>• El nombre de la clase del formulario se le da para poder manejarla después desde CSS y darle forma y color a nuestro gusto.</p>
+				<p>• Y en "action="recibir.php"" simplemente es para que al ejecutarse nuestro formulario se redirija al usuario a esa página sobre la cuál trabajaremos más adelante.</p>
+				<p>• Podemos notar que los td que contienen "colspan=2" es por que van a ocupar dos casillas de nuestra tabla, para que de esta forma quede centrado y los "align=right" son para alinear ese texto a la derecha.</p>
+				<p>• Los input serán las cajas de información encargadas de obtener y pedir la información que deseamos almacenar, para esto la funcipon "type" es la que nos ayudará para defnir que dato vamos a introducir por esa caja,</p>
+				<p>• En este ejemplo utilizamos el "type=text" para introducir textos, como son en el nombre, apellidos y correo, para que la contraseña no sea visible utilizamos un "type=password" lo cuál oculta´ra lo que vayamos escribiendo.</p>
+				<p>• El manejo de los type=radio" son para crear unos tipos de botones circulares donde seleccionaremos el sexo, dentro de esta etiqueta utilizamos un valor diferente para diferenciarlos, ya que lo que contenga dentro de los values será el valor que guardaremos en nuestra base de datos.</p>
+				<p>• Por ultimo utilizamos  un "type=submit" el cuál se encargará de enviar los datos a otra pestaña donde se hará la conexion a la base de datos para poder almacenarla.</p>
+				<p>• Podemos observar que todas nuestras cajas de informacion "inputs" al final contienen la palabra "required/", su función es de que no permitirá guardar la informacioón hasta que esos campos contengan algo dentro, esto nos sirve para asegurarnos de que siempre que se haga un registro no vaya vacío.</p>			
+			</div>
+			<div class="curso3d">
+				<p>Al hacer lo anterior y abrir la página por medio del localhost y el xamapp activado como ya se había mencionado anteriormente nos debe de quedar algo como lo siguiente:</p>
+				
+				<CENTER>
+					<img src="img/curso3/form.png" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3i">
+				<p>Hasta este momento ya contamos con la interfaz con la que va a interactuar el usuario, solo nos  falta darle forma a nuestro gusto y hacer la conexión a la base de datos, primero haremos la conexión a base de datos, para eso abriremos el archivo "recibir.php" que ya habíamos creado anteriormente y que es al que se llama en nuestro formulario</p>
+				<p>Para este caso, como es un archivo que manda a llamar en la parte de nuestro formulario no es necesariamente poner la sintaxis principal de un archivo html, pero ahora haremos uso de un lenguaje diferente.</p>
+				<p>• Ahora empezaremos a trabajar mas en específico con el lenguaje de php, donde para trabajar sobre el mismo necesitamos la siguiente sintaxis:</p>
+				<textarea readonly class="pequeño" id="html" name="coment">
+<?php
+
+
+?>
+				</textarea>
+				<p>Dentro de estas etiquetas tenemos que generar todo nuestro código que vaya a conectar con base de datos,para esto tendremos que conectar primeramente con la base de datos que creamos y posteriormente mandar a guardar los datos.</p>
+			</div>
+			<div class="curso3d">
+				<p>Para poder generar la conexion y el guardado de datos nuestro archivo contendrá el siguiente código:</p>
+				<textarea readonly class="mediano" id="html" name="coment">
+<?php
+$con=mysqli_connect('localhost','root','','formulario') or die('Error en la conexion servidor');
+
+$sql="INSERT INTO registro VALUES(null,'".$_POST["nombre"]."','".$_POST["apellido"]."','".$_POST["email"]."','".$_POST["pass"]."','".$_POST["sexo"]."')";
+
+$resultado=mysqli_query($con,$sql) or die ('Error en el query database');
+
+mysqli_close($con);
+
+echo 'Los datos ingresados se añadieron correctamente, gracias por dejar su comentario, se tomará en cuenta para el mejoramiento de la plataforma '.'<a href="../curso3.html">Volver a la página anterior</a>';
+?>					
+				</textarea>
+				<p>• Como vemos primeramente se hace la conexión a la base de datos, indicando que es de manera local, y a continuación introduciendo el usuario y contraseña de nuestra cuenta en XAMPP (por defecto el usuario es root y no contiene contraseña, por eso los '' quedan vacias ya que ahí va la contraseña) seguido del nombre de nuestra base de datos, de no cumplirse con esto mandamos un mensaje de error.</p>
+				<p>• Si entro en la primera y conecto de manera exitosaprocede a la siguiente linea donde mediante el sql manda una orden que nos indica que nos va a insertar en el nombre de la tabla "registro" los siguientes valores:</p>
+				<p>• El valor null se agrega ya que en el primer campo de nuestra base de datos (id) le dimos que fuera de manera automática.</p>
+				<p>• A continuación mediante el signo "$" el cuál nos sirve para crear variables mandamos a llamar a nuestras cajas de información con el nombre que le asignamos, y por lo mismo que va a buscar a otro archivo se agrega como '".$_POST[nombredevariable]."', ya que si fuera en el mismo archivo basta con llamarla solo con el signo $.</p>
+				<p>• Después de esto checa si se insertó correctamente, si no lo fué por algun motivo nos manda otro mensaje de error y si no simplemente se insertan y se cierra la conexion con la base de datos, y para que el usuario vea que se hizo correcto el guardado utilizamos el "echo", el cuál sirve para  mostrar un mensaje en pantalla y a través del mismo hacemos saber que el registro fue correcto.</p>
+				
+			</div>
+			<div class="curso3i">
+				<p>Finalmente solo falta darle color y forma a nuestro estilo, para esto crearemos un nuevo archivo en nuestra carpeta con extesión.css y dentro de este pondremos el siquiente código:</p>
+<textarea readonly class="pequeño" id="html" name="coment">
+body {
+	background: #b44f4f;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	padding-top: 55px;
+}</textarea>
+				<p>• Simplemente le damos un color de fondo a la página, le asignamos un tamaño a la letra y le damos un espacio libre de 55 pixeles de la parte superior de la página.</p>
+				
+			</div>
+			<div class="curso3d">
+				<p>Ahora para darle estilo a la tabla de nuestro formulario introducimos el siguiente código:</p>
+				<textarea readonly class="pequeño">
+.formulario{
+	width: 400px;
+	padding-top: 20px;
+	padding-left: 50px;
+	background: #e77878;
+	border-radius: 30px 0px 30px 0px;
+}					
+				</textarea>
+				<p>• En esta parte estamos diciendo que al formulario le de un ancho de 400 pixeles, que tenga un espacio superior de 20 pixeles y que de la izquierda tenga 50 pixeles y por último a  nuestra tabla le asignamos un color.</p>	
+			<p>• Y con el "border-radius" le damos curva a dos de las cuatro esquinas de nuestra tabla, comovemos son contrarias ya que a cada esquina le asignamos sus pixeles de curvatura y dos no cuentan con esto.</p>
+			</div>
+			<div class="curso3i">
+				<p>Por último para nuestro botón de enviar datos también lo vamos a modificar, para esto le agregamos las siguientes líneas de código:</p>
+				<textarea readonly class="pequeño">
+.env{
+	background: #38747c;
+	color: #ffffff;
+	width: 100px;
+	height: 25px;
+	border-radius: 20px;
+}
+				</textarea>
+				<p>• Donde le asignamos un color a el botón.</p>
+				<p>• Le damos un color específico a las letras.</p>
+				<p>• Le asignamos un ancho de 100 pixeles al botón y un largo de 25 pixeles.</p>
+				<p>• Por ultimo le asignamos el "border-radius" para redondear las esquinas del botón a 20 pixeles de cada lado.</p>
+				<CENTER>
+					<img src="" width="100%">
+				</CENTER>
+			</div>
+			<div class="curso3d">
+				<p>Y finalmente tenemos un resultado final utilizando HTML, CSS y PHP en una página web, donde nuestra interfaz para guardar información nos queda de la siguiente manera:</p>
+				<CENTER>
+					<img src="img/curso3/fina.png" width="100%">
+				</CENTER>
+			</div>
+			<div class="checkpage">
+				<p>Si deseas ver como queda la página creada en este curso, te invitamos a que des click a continuación para darle un vistaso de su creación final.</p>
+				<a href="Curso3/iniciop.html">Click aquí</a>
+			</div>
+			
+		</article>
+	</main>
+
+	<div class="RS">
+
+		<a href="https://es-la.facebook.com"><img src="img/facebook.png"></a>
+
+		<a href="https://twitter.com/?lang=es"><img src="img/twitter.png"></a>
+	</div>
+	<div class="FDA">
+			<p class="act">FECHA DE ACTUALIZACIÓN: </p>
+		</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/menu.js"></script>
+
+</body>
+
+</html>

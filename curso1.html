@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Curso 1</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="shortcut icon" href="img/Logo personal.jpg" />   <!--Favicon -->
+
+</head>
+<body>
+	<!--Menu inicio-->
+	<div class="prox">
+		<main class="map">
+		<h1>
+			<p>Proximamente: Cursos de programación</p>
+		</h1>
+	</main>
+	</div>
+	
+	<header id="header">
+	    <nav class="menu">
+	    	<div class="logo">
+	    	<a href="index.html"><img src="img/Logo personal.jpg" alt="">Inicio</a>
+	    	<a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars" aria-hidden="true"></i></a>
+	        </div>
+
+	    	<div class="enlaces" id="enlaces">
+	    		<a href="introdb.html"><i class="fa fa-home" aria-hidden="true"></i> Introducción</a>
+	    		<a href="curso1.html"><i class="fa fa-cube" aria-hidden="true"></i>Curso 1</a>
+	    		<a href="curso2.html"><i class="fa fa-cube" aria-hidden="true"></i> Curso 2</a>
+	    		<a href="curso3.html"><i class="fa fa-cube" aria-hidden="true"></i> Curso 3</a>
+				<a href="registro.php"><i class="fa fa-cube" aria-hidden="true"></i>Registrate</a>
+			</div>
+	    </nav>
+		
+	</header>
+	
+
+	<main>
+	    <article>
+			
+			<div class="nombrecurso">
+				<h1>Pasos para abrir MySQL</h1>
+			</div>
+			<div class="cursosiz">
+				<h1>Paso 1</h1>
+				<p>
+					Para abir la consola de comandos debemos de presionar las siguientes teclas ''Win+R'', donde se nos abrirá  una venta y sobre ella teclearemos las siguientes letras ''cmd'' y a continuación daremos en aceptar.
+				</p>
+				<img src="img/ventana-cmd.png" >
+			</div>
+			<div class="cursosiz">
+				<h1>Paso 2:</h1>
+				<p>
+					Una vez adentro nos abrirá una ventana, la cuál será la ventana de comandos sobre la cuál ejecutaremos mysql, pero nos abrirá por defecto con una ruta especifica la cuál no necesitaremmos por el momento y para salir de ahí tendremos que escribir el siguiente comando:
+				</p>
+				<p>
+					• cd..\
+				</p>
+				<img src="img/vent2.png" >
+			</div>
+			<br class="borra">
+			<div class="cursosiz">
+					<h1>Paso 3:</h1>
+					<p>
+						En esta parte ya nos encontraremos dentro del disco local C en la carpeta, solo hace falta meternos a la ruta y ejecutar mysql, esto se hará con el siguiente comando: ''cd xampp\'' y daremos enter, después haremos lo mismo con los siguientes comandos:
+					</p>
+					<p>
+						• cd mysql\			
+					</p>
+					<p>
+						• cd bin\			
+					</p>
+					<img src="img/vent3.png" >
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 4:</h1>
+					<p>
+						Una vez hecho eso, tendremos que ejecutar mysql con el siguiente comando ''mysql.exe'', lo cual ejecutará mysql y ya estaremos listo para hacer uso de la misma.
+					</p>
+					<br>
+					<br>
+					<img src="img/iniciomysql.png" >
+				</div>
+				<br class="borra">
+				<div class="nombrecurso">
+					<h1>Base de datos en CMD</h1>
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 1:</h1>
+					<p>
+						Ahora pasaremos a hacer unas ejecucioes, empezando con la creación de 2 bases de datos. En este caso vamos a crear la base de datos ''Escuela'' y ''Tienda'', con el siguiente comando:
+					</p>
+					<p>
+						• create database escuela;
+					</p>
+					<p>
+						• create database tienda;
+					</p>
+					<img src="img/Part2/créate databases2.jpeg" ">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 2:</h1>
+					<p>
+						Para poder visualizar las base de datos existentes en mysql basta con introducir el siguiente comando:
+					</p>
+					<p>
+						• show databases;
+					</p>
+					<img src="img/Part2/show databases.jpeg">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 3:</h1>
+					<p>
+						Ahora si queremos eliminar una base de datos simplemente ponemos la palabra ''drop database'' seguido del nombre de la base de datos que queremos eliminar, en este caso quedaría así:
+					</p>
+					<p>
+						• drop database tienda;
+					</p>
+					<img src="img/Part2/drop database.jpeg">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 4:</h1>
+					<p>
+						Para trabajar sobreuna base de datos la debemos seleccionar mediante el comando ''use'', por lo que en este caso quedaría de la siguiente manera:
+					</p>
+					<p>
+						• use escuela;
+					</p>
+					<img src="img/Part2/use escuela.jpeg">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 5:</h1>
+					<p>
+						Para crear una tabla se debe de especificar sus tipos de datos que va a aceptar dentro de la tabla, para este ejemplo introducimos las siguieintes dos tablas con sus respectivos tipos de datos:
+					</p>
+					<p>
+						• create table grupos (id int primary key, grado int(1), grupo varchar(20));
+					</p>
+					<p>
+						• create table alumnos (id int primary key, nombre varchar(15), apellido varchar(15)); 
+					</p>
+					<img src="img/Part2/créate tablas.jpeg">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 6: </h1>
+					<p>
+						Los tipos de datos para las bases de datos se clasifican en diferente tipos, entre los cuáles están:
+					</p>
+					<p>
+						• Texto corto: Sirve para poder hacer uso de datos alfanuméricos como nombres, título, etc.
+					</p>
+					<p>
+						• Texto largo: Grandes cantidades de datos alfanuméricos como oraciones y párrafos.
+					</p>
+					<p>
+						• Números: Sirve para poder emplear datos numéricos como 1,2,3,4, etc.
+					</p>
+					<p>
+						• Si/No: Datos booleanos (verdadero/falso)
+					</p>
+					<br>
+					<!--<img src="img/Part2/show tables.jpeg">-->
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 7: </h1>
+					<p>
+						Si queremos consultar las tablas que conforman nuestra base de datos, sólo tenemos que introdur el siguiente código:
+					</p>
+					<p>
+						•show tables;
+					</p>
+					<br>
+					<img src="img/Part2/show tables.jpeg">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 8:</h1>
+					<p>
+						Para eliminar una tabla dentro de una base de datos, sólo tenemos que introducir el siguiente comando ''drop table nomtabla'', donde nomtabla lo sustituimos por el nombre de la tabla que deseamos eliminar, por ejemplo:
+					</p>
+					<p>
+						• drop table alumnos;
+					</p>
+					
+					<img src="img/Part2/drop table .jpeg">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 9: </h1>
+					<p>
+						Para insertar información dentro de una tabla tenemos que seguir un orden, el cual depende de los tipos de datos que pusimos al crear la tabla, en este caso un ejemplo sería el siguiente:
+					</p>
+					<p>
+						• insert into grupos (id, grado, grupo) values (1, 6, "b");
+					</p>
+					<img src="img/Part2/insert into.jpeg">
+				</div>
+				
+				<div class="cursosiz">
+					<h1>Paso 10:</h1>
+					<p>
+						Para ver la información contenida dentro de una tabla en una base de datos basta con introducir el siguiente comando:
+					</p>
+					<p>
+						• select * from grupos;
+					</p>
+					<img src="img/Part2/select from.jpeg">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 11:</h1>
+					<p>
+						Para borrar un registro de datos en una tabla se introduce el siguiente código "delete from nomtabla where id=n", donde nomtabla es el nombre la tabla donde se encuentra el registro y n representa su número correspondiente, por ejemplo:
+					</p>
+					<p>
+						•delete from grupos where "id=5";
+					</p>
+				
+					<img src="img/Part2/delete from grupos where id 5.jpeg">
+				</div>
+				<br class="borra">
+				
+				<div class="nombrecurso">
+					<h1>Tienda informática en MySQL</h1>
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 1:</h1>
+					<p>
+						Para empezar vamos a crear la  base de datos que vamos a utlizar, en este caso de la tienda.
+					</p>
+					<p>
+						• create database tienda;
+					</p>
+					<img src="img/curso1/create.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 2:</h1>
+					<p>
+						Ahora vamos a ver la base de datos que creamos mediante el siguiente código:
+					</p>
+					<p>
+						• show databases;
+					</p>
+					<img src="img/curso1/show.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 3:</h1>
+					<p>
+						Ahora habilitamos la base de datos para poder usarla mediante el sigugiente código:
+					</p>
+					<p>
+						• use tienda;
+					</p>
+					<img src="img/curso1/use.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 4:</h1>
+					<p>
+						Para crear una tabla en nuestra base de datos utilizaremos el siguiente código:
+					</p>
+					<p>
+						• create table fabricantes(clave_fabricante int not null, nombre varchar(30), primary key (clave_fabricante));
+					</p>
+					<img src="img/curso1/create table1.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 5:</h1>
+					<p>
+						Ahora pasamos a crear una 2da tabla como se muestra a continuación:
+					</p>
+					<p>
+						•create table articulos (clave_articulo int not null, nombre varchar(30), precio int, clave_fabricante int, primary key (clave_articulo), foreign key (clave_fabricante) references fabricantes (clave_fabricante));
+					</p>
+					<img src="img/curso1/ctable2.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 6:</h1>
+					<p>
+						Ahora vamos a visualizar las tablas que contiene nuestra base de datos mediante el siguiente código:
+					</p>
+					<p>
+						• show tables;
+					</p>
+					<img src="img/curso1/showtables.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 7:</h1>
+					<p>
+						Para mostrar los atributos de la tabla Artiulos, utilizamos el siguiente código:
+					</p>
+					<p>
+						• describe articulos;
+					</p>
+					<img src="img/curso1/describe articulos.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 8:</h1>
+					<p>
+						Ahora vamos a insertar registros de información dentro de la tabla mediante el siguiente código: 
+					</p>
+					<p>
+						• insert into fabricantes values (1, 'Kingston');
+					</p>
+					
+					<img src="img/curso1/insert into fab.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 9:</h1>
+					<p>
+						Ahora insertaremos registro de igual forma pero en la tabla Articulos.
+					</p>
+					<p>
+						• insert into articulos values (1, 'Teclado', 100, 3);
+					</p>
+					<img src="img/curso1/insert into fab.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 10:</h1>
+					<p>
+						Para obtener todos los datos de los productos de la tienda utilizamos el siguiente código;
+					</p>
+					<p>
+						• select * from articulos;
+					</p>
+					<img src="img/curso1/select from articulos.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 11:</h1>
+					<p>
+						Ahora para obneter los nombres de los productos de la tienda se utiliza el siguiente código:
+					</p>
+					<p>
+						• select nombre from articulos;
+					</p>
+					<img src="img/curso1/select nombre from articulos.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 12:</h1>
+					<p>
+						Si queremos ver los nombres y precios de los productos, utilizamos el siguiente código:
+					</p>
+					<p>
+						• select nombre, precio from articulos;
+					</p>
+					<img src="img/curso1/select nombre prercio from articulos.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 13:</h1>
+					<p>
+						Ahora para obtener los nombres de los articulos sin repeticiones utilizamos el siguiente código:
+					</p>
+					<p>
+						• select distinct nombre from articulos;
+					</p>
+					<img src="img/curso1/select distint articulos.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 14:</h1>
+					<p>
+						Para obtener los datos del artículo cuya clave de producto ez '5' utilizamos el siguiente código:
+					</p>
+					<p>
+						• select * from articulos where clave_articulo=5;
+					</p>
+					<img src="img/curso1/where clavearticulo5.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 15:</h1>
+					<p>
+						Ahora obtenemos los  datos del artículo cuyo nombre del producto es ''Teclado'':
+					</p>
+					<p>
+						• select * from articulos where nombre='teclado'
+					</p>
+					<img src="img/curso1/where nombre teclado.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 16:</h1>
+					<p>
+						Para obtener todos los datos de la Memoria RAM y memoria USB utilizamos el siguiente código:
+					</p>
+					<p>
+						• select * from articulos where nombre='memoria ram' or nombre='memoria usb';
+					</p>
+					<img src="img/curso1/where nombre ramusb.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 17:</h1>
+					<p>
+						Para obtener todos los datos de los artículos que empiezan con 'M' utilizamos el siguiente código:
+					</p>
+					<p>
+						• select * from articulos where nombre like 'm%';
+					</p>
+					<img src="img/curso1/where like m.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 18:</h1>
+					<p>
+						Para obtener el nombre de los productos donde el precio sea $100 utilizamos el siguiente código:
+					</p>
+					<p>
+						• select nombre from articulos where precio = 100;
+					</p>
+					<img src="img/curso1/where precio 100.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 19:</h1>
+					<p>
+						Con el siguiente comando seleccionaremos el nombre de los productos donde el precio sea mayor a $200:
+					</p>
+					<p>
+						• select nombre from articulos where precio > 200;
+					</p>
+					<img src="img/curso1/where precio mayor 200.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 20:</h1>
+					<p>
+						Con el siguiente comando obtendremos todos los datos de los artículos cuyo precio este entre $100 y $200 con el operador AND:
+					</p>
+					<p>
+						• select * from articulos where precio >=100 and precio <=350;
+					</p>
+					<img src="img/curso1/where precio 100 350.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 21:</h1>
+					<p>
+						Con el siguiente comando obtendremos todos los datos de los artículos cuyo precio este entre $100 y $200 con el operador BETWEEN:
+					</p>
+					<p>
+						• select * from articulos where precio between 100 and 350;
+					</p>
+					<img src="img/curso1/between 100 350.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 22:</h1>
+					<p>
+						Para obtener el precio medio de todos los productos utilizamos el siguiente comando:
+					</p>
+					<p>
+						•select avg(precio) from articulos;
+					</p>
+					<img src="img/curso1/avg.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 23:</h1>
+					<p>
+						Con el siguiente comando obtenemos el precio medio de los artículos cuyo código de fabricante sea 2:
+					</p>
+					<p>
+						• select avg(precio) from articulos where clave_fabricante=3;
+					</p>
+					<img src="img/curso1/avg 3.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 24:</h1>
+					<p>
+						Para obtener el nombre y precio de los artículos ordenados por nombre utilizaremos el siguiente código:
+					</p>
+					<p>
+						• select nombre, precio from articulos order by nombre;
+					</p>
+					<img src="img/curso1/select nombre order by nombre.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 25:</h1>
+					<p>
+						Para obtener todos los datos de los productos ordenados descendentemente por Precio utilizamos el siguiente comando:
+					</p>
+					<p>
+						• select * from articulos order by precio desc;
+					</p>
+					<img src="img/curso1/select order by precio desc.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 26:</h1>
+					<p>
+						Para obtener el nombre y precio de los artículos cuyo precio sea mayor a 250 y ordenarlos descendentemente por precio y luego ascendentemente por nombre utilizamos el siguiente comando:
+					</p>
+					<p>
+						• select nombre, precio from articulos where precio >= 250 order by precio desc, nombre;
+					</p>
+					<img src="img/curso1/order by precio desc nombre.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 27:</h1>
+					<p>
+						Para obtener un listado completo de los productos, incluyendo por cada artículo los datos del articulo y del fabricante utilizamos el siguiente comando:
+					</p>
+					<p>
+						• select * from articulos, fabricantes where articulos.clave_fabricante = fabricantes.clave_fabricante;
+					</p>
+					<img src="img/curso1/select from articuclos fabriantes where articulos clave fabricante=fabricantes clave fabricante.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 28:</h1>
+					<p>
+						Para obtener la clave del producto, nombre del producto y nombre del fabricante de todos los productos en venta utilizamos el siguiente comando:
+					</p>
+					<p>
+						• select articulos.clave_articulo, articulos.nombre, fabricantes.nombre from articulos, fabricantes where articulos.clave_fabricante = fabricantes.clave_fabricante;
+					</p>
+					<img src="img/curso1/select articulos clave_articulos articulosnombre...from articulos.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 29:</h1>
+					<p>
+						Para obtener el nombre y precio de los artículos donde el fabricante sea Logitech ordenados alfabéticamente por nombre del producto utilizamos el siguiente comando:
+					</p>
+					<p>
+						• select articulos.nombre, articulos.precio from articulos, fabricantes where fabricantes.nombre='logitech' and articulos.clave_fabricante = fabricantes.clave_fabricante order by articulos.nombre;
+					</p>
+					<img src="img/curso1/select articulos clave_articulos articulosnombre...from articulos fabricantes...order byarticulos nombre.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 30:</h1>
+					<p>
+						Para obtener el nombre, precio y nombre de fabricante de los productos que son marca Lexar o Kingston ordenados descendentemente por precio utilizamos el siguiente comando:
+					</p>
+					<p>
+						•select articulos.nombre, articulos.precio, fabricantes.nombre from articulos, fabricantes where fabricantes.nombre='lexar' or fabricantes.nombre='kingston' and articulos.clave_faricante = fabricantes.clave_fabricante order by articulos.precio desc;
+					</p>
+					<img src="img/curso1/select articulos clave_articulos articulosnombre...from articulos fabricantes...order byarticulos precio desc.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 31:</h1>
+					<p>
+						Para añadir un nuevo producto con clave de producto 11,Altavoces de $120 del fabricante 2 utilizamos el siguiente comando:
+					</p>
+					<p>
+						• insert into articulos values(11, 'Altavoces', 120, 2);
+					</p>
+					<img src="img/curso1/insert altavoces articulos.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 32:</h1>
+					<p>
+						Para cambiar el nombre del producto 6 a 'Impresora Laser' utilizamos el siguiente comando:
+					</p>
+					<p>
+						•update articulos set nombre='Impresora laser' where clave_articulo=8;
+					</p>
+					<img src="img/curso1/update articulos impresora laser.jpg">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 33:</h1>
+					<p>
+						Si queremos aplicar un descuento del 10% a todos los productos utilizamos el siguiente comando:
+					</p>
+					<p>
+						• update articulos set precio=precio *0.10;
+					</p>
+					<img src="img/curso1/update articulos set precio = precio x 10.png">
+				</div>
+				<div class="cursosiz">
+					<h1>Paso 34:</h1>
+					<p>
+						Si queremos aplicar un descuento de $10 a todos los productos cuyo precio sea mayor o igual a $300 utilizamos el siguiente comando:
+					</p>
+					<p>
+						• update articulos set precio=precio - 10 where precio >= 300;
+					</p>
+					<img src="img/curso1/update articulos set precio = precio - 10.png">
+				</div>
+				<br class="borra">
+				<div class="cursosiz">
+					<h1>Paso 35:</h1>
+					<p>
+						Finalmente para borrar el producto número 6 utilizaremos el siguiente comando:
+					</p>
+					<p>
+						• delete from articulos where clave_articulo = 6;
+					</p>
+					<img src="img/curso1/deletefrom articulos where clave art 6.png">
+				</div>
+			<br class="borra">
+		</article>	
+	</main>
+
+	
+		
+		  
+		<div class="RS">
+	
+			<a href="https://es-la.facebook.com"><img src="img/facebook.png"></a>
+			
+			<a href="https://twitter.com/?lang=es"><img src="img/twitter.png"></a>
+		</div>
+		<div class="FDA">
+			<p class="act">FECHA DE ACTUALIZACIÓN: </p>
+		</div>
+
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/headroom.min.js"></script>
+	    <script src="js/menu.js"></script>
+
+</body>
+</html>

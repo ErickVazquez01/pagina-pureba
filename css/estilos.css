@@ -1,0 +1,388 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #b44f4f;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	padding-top: 55px;
+}
+header {
+	background: #7e2121;
+	position: fixed;
+	width: 100%;
+	top:0;
+}
+
+.menu {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu .logo {
+	display: inline-block;
+	margin-right: 1em;
+	
+}
+
+.menu .logo img {
+	vertical-align: top;
+	height: 22px;
+}
+
+.menu .btn-menu {
+	display: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.nombrecurso{
+	width: 100%;
+	background: #091961;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	/*font-family: 'Franklin Gothic Medium', Arial, sans-serif;  NEGRITA*/
+	font-family: 'Nunito Sans', sans-serif;
+}
+.relleno{
+	
+	width: 42%;
+	float: left;
+	margin-left: 3% ;
+	margin-right: 3%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.cursosiz{
+	background: #425196;
+	width: 42%;
+	float: left;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.cursosiz img{
+	width: 100%;
+}
+
+.cursosiz h1{
+	color: #700916;
+	text-decoration: none;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.borra {clear: both}
+.menu .logo a{
+	color: #fff;
+	text-decoration: none;
+}
+menu .enlaces {
+	display: inline-block;
+	text-align: right;
+}
+.menu .enlaces a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em;
+	text-align: center;
+	font-size: 1em;
+
+}
+
+.menu .enlaces i {
+	margin-right: 5px;
+}
+.menu .enlaces a:hover {
+	background: #f2f2f2;
+    color: #4357ad;
+}
+main article .cursosder{
+	height: 90%;
+}
+main article .cursosiz{
+	height: 90%;
+}
+main {
+	width: 90%;
+	max-width:1000px;
+	margin: 20px auto;
+	background: #942323;
+	padding: 20px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75); 
+}
+main article h1 {
+	font-weight: normal;
+	margin-bottom: .5em;
+
+}
+main article .contenido{
+	text-align: justify;
+}
+main article h2{
+	color: #fff;
+	
+	text-align: center;
+}
+main article hr {
+	margin-bottom: 1em;
+	height: 2px;
+	background: #da4c5f;
+	border: none;
+	
+}
+main article p {
+	margin-bottom: 1em;
+	color: #fff;
+}
+main article .subt{
+	text-align: center;  /*Subtitulos*/
+}
+main article .imagenes{
+	text-align: center;
+}
+
+.content-cabecera{
+    width: 100%;
+    max-width: 400px;
+    margin-top: 100px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.content-logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgb(82, 22, 4);
+    margin: auto;
+}
+
+.content-logo img{
+	padding-top: 10px;
+    width: 82%;
+    height: 90%;
+}
+
+.content-cabecera h1{
+    font-weight: 100;
+    color: white;
+    margin-top: 0px;
+}
+
+main .conceptos{
+	text-align: center;
+	color: #f2f2f2;
+	text-decoration: none;
+	
+}
+main .conceptos .td{
+	width: 50%;
+}
+.subtitulos {
+	text-align: left;
+	text-decoration: none;
+}
+.contsubt{
+	text-align: left;
+	padding-left: 15px;
+}
+.mantenimiento{
+	text-align: center;
+	
+}
+
+/* efectos del menu*/
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.RS{
+	background: #425196;
+	text-align: center;
+	padding-top: 5px;
+	margin-left: 45%;
+	margin-right: 45%;
+	border-radius: 50px;
+	margin-bottom: 5px;
+
+	transition: 0.3s;
+}
+
+.RS:hover{
+	background: #2a3877;
+	border-radius: 15px;
+	margin-left: 42%;
+	margin-right: 42%;
+	/*transition: 0.3s;*/
+}
+.FDA{
+	background: #000000;
+	color: #f2f2f2;
+	text-align: center;
+	
+	
+}
+
+
+.prox .map{
+	width: 270px;
+	/*height: 80%;*/
+	text-align: center;
+	position: fixed;
+	margin-top: 20px;
+	margin-right:90%;
+	background: #36468f;
+	margin-left: 82%;
+	color: #fff;
+}
+
+
+.mv{
+	background: #941616;
+	padding: 5px;
+	margin-left: 35px;
+	margin-right: 35px;
+	width: 40%;
+	
+	float: left;
+	text-align: center;
+}
+.mv h1{
+	color: #f2f2f2;
+}
+.mv p{
+	text-align: justify;
+}
+.contpi{
+	background: #0f737a;
+	padding: 5px;
+	margin: 20px;
+	width: 51%;
+	float: left;
+	text-align: justify;
+}
+
+.contpd{
+	background: #0f737a;
+	padding: 5px;
+	margin: 20px;
+	width: 51%;
+	float: right;
+	text-align: justify;
+}
+main article h1{
+	color: #f2f2f2;
+	text-align: center;
+}
+.curso3i{
+	background: #a83535;
+	width: 70%;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.75); 
+}
+.curso3d{
+	background: #a83535;
+	width: 70%;
+	margin-left: 30%;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.75); 
+}
+textarea{
+	background: #75d8df;
+	width: 100%;
+	resize: none;
+}
+textarea:hover{
+	background: #4ea2a8;
+}
+.pequeño{
+	height: 80px;
+}
+.mediano{
+	height: 250px;
+}
+.grande{
+	height: 500px;
+}
+
+.FDA .act::after{
+	content: "28/05/2019 ";
+}
+.checkpage{
+	width: 100%;
+	background: #0f737a;
+	border-radius: 10px;
+	padding: 15px;
+}
+.checkpage:hover{
+	background: #18a3ad
+}
+.checkpage p{
+	text-align: justify;
+}
+.checkpage a{
+	color: rgb(241, 15, 15);
+}
+
+@media screen and (max-width: 700px) {
+	header .menu {
+		flex-direction:column;
+	}
+
+	header .menu .logo {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		padding: 1em;
+	}
+	header .menu .logo .btn-menu {
+		display: inline-block;
+	}
+	header .menu .enlaces {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	main article h2{
+		padding-left: 7%;
+		text-align: justify;
+	}
+	.prox .map{
+		position: initial;
+		margin-left: 30px;
+		width: 90%;
+	}
+}
+
